@@ -102,3 +102,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias cat="bat"
+alias ls="lsd"
+alias cd="z"
+
+eval "$(fnm env)"
+export PATH=$HOME/.local/bin:$PATH
+eval "$(zoxide init zsh)"
