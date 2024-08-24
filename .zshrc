@@ -110,3 +110,15 @@ alias cd="z"
 eval "$(fnm env)"
 export PATH=$HOME/.local/bin:$PATH
 eval "$(zoxide init zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/akrc/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+export PATH=/Users/akrc/Library/pnpm:$PATH
+
+export ANDROID_NDK_HOME="/opt/homebrew/share/android-ndk"
