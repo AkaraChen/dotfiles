@@ -122,3 +122,11 @@ esac
 export PATH=/Users/akrc/Library/pnpm:$PATH
 
 export ANDROID_NDK_HOME="/opt/homebrew/share/android-ndk"
+
+export COREPACK_ENABLE_AUTO_PIN=0
+
+export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
+[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/akrc/.cache/lm-studio/bin"
