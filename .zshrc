@@ -117,3 +117,5 @@ export COREPACK_ENABLE_AUTO_PIN=0
 export EDITOR="hx"
 
 eval "$(starship init zsh)"
+
+export NEXT_TELEMETRY_DISABLED=1
