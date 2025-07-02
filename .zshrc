@@ -115,3 +115,5 @@ eval "$(zoxide init zsh)"
 export COREPACK_ENABLE_AUTO_PIN=0
 
 export EDITOR="hx"
+
+eval "$(starship init zsh)"
