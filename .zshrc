@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="ys"
+ZSH_THEME="afowler"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,7 +70,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git golang rust node npm poetry python vscode brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,27 +106,12 @@ source $ZSH/oh-my-zsh.sh
 alias cat="bat"
 alias ls="lsd"
 alias cd="z"
+alias cls="clear"
 
 eval "$(fnm env)"
 export PATH=$HOME/.local/bin:$PATH
 eval "$(zoxide init zsh)"
 
-# pnpm
-export PNPM_HOME="/Users/akrc/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
-export PATH=/Users/akrc/Library/pnpm:$PATH
-
-export ANDROID_NDK_HOME="/opt/homebrew/share/android-ndk"
-
 export COREPACK_ENABLE_AUTO_PIN=0
 
-export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
-[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/akrc/.cache/lm-studio/bin"
+export EDITOR="hx"
