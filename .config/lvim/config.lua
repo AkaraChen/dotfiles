@@ -27,6 +27,9 @@ lvim.plugins = {
         },
         messages = {
           enabled = false
+        },
+        notify = {
+          enabled = false
         }
       })
     end
