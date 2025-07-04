@@ -5,7 +5,15 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 lvim.plugins = {
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
+  }
 }
 
 lvim.colorscheme = "catppuccin-frappe"
