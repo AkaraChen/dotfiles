@@ -122,3 +122,4 @@ export EDITOR="hx"
 eval "$(starship init zsh)"
 
 export NEXT_TELEMETRY_DISABLED=1
+export PATH=$HOME/.proto/bin:$PATH
