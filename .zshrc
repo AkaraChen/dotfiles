@@ -110,6 +110,7 @@ alias ls="lsd"
 alias cd="z"
 alias cls="clear"
 alias vog="gh repo view --web"
+alias his="history | grep"
 
 eval "$(fnm env)"
 export PATH=$HOME/.local/bin:$PATH
