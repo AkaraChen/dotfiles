@@ -170,6 +170,10 @@
   animation-timing-function: steps(15);
 } /* }}} */
 
+#waybar.main #workspaces {
+  visibility: hidden;
+}
+
 /* Main bar warnings */ /* {{{ */
 #waybar.main #pulseaudio.output.muted,
 #waybar.main #pulseaudio.input.source-muted {
