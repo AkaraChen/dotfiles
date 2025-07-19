@@ -33,10 +33,10 @@
         // "group/tray",
         // "custom/spacer3",
         // "custom/spacer2",
-        "hyprland/workspaces",
-        "custom/spacer2",
-        "custom/spacer3",
-        "hyprland/submap",
+        // "hyprland/workspaces",
+        // "custom/spacer2",
+        // "custom/spacer3",
+        // "hyprland/submap",
         "hyprland/window"
       ],
   
