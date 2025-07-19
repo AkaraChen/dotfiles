@@ -34,13 +34,13 @@
 /* Main bar defaults */ /* {{{ */
 #waybar.main {
   background: transparent;
-  font-family: "JetBrains Mono Nerd Font";
+  font-family: "imWritingMono Nerd Font";
   font-size: 10pt;
   font-weight: 500;
 }
 
 #waybar.main button {
-  font-family: JetBrains Mono Nerd Font;
+  font-family: imWritingMono Nerd Font;
   font-size: 10pt;
   font-weight: 500;
   transition: all 0.15s ease-in-out;
@@ -264,7 +264,7 @@ tooltip {
   border: 3px solid @caution;
   border-radius: 8px;
   font-weight: 500;
-  font-family: "JetBrains Mono Nerd Font";
+  font-family: "imWritingMono Nerd Font";
 }
 
 #waybar.main #tray menu {
