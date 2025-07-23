@@ -6,6 +6,23 @@ spawn-at-startup "waybar"
 spawn-at-startup "ghostty"
 spawn-at-startup "swaybg -i /home/akrc/.config/assets/bochi-1.jpg"
 
+layout {
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 0.75
+        proportion 1.0
+    }
+    preset-window-heights {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 0.75
+        proportion 1.0
+    }
+}
+
 window-rule {
     geometry-corner-radius 10
     opacity 0.75
@@ -29,11 +46,14 @@ binds {
     Mod+Return { spawn "ghostty"; }
     Mod+D { spawn "ulauncher"; }
     Mod+Q { close-window; }
-    Mod+R { enter-resize-mode; }
-    Mod+Left { focus-column-left; }
-    Mod+Right { focus-column-right; }
-    Mod+Up { focus-window-up; }
-    Mod+Down { focus-window-down; }
+    Mod+Right { switch-preset-column-width; }
+    Mod+Left { switch-preset-column-width direction="previous"; }
+    Mod+Up { switch-preset-window-height; }
+    Mod+Down { switch-preset-window-height direction="previous"; }
+    Mod+Shift+Left { focus-column-left; }
+    Mod+Shift+Right { focus-column-right; }
+    Mod+Shift+Up { focus-window-up; }
+    Mod+Shift+Down { focus-window-down; }
     Mod+Ctrl+Left { move-column-left; }
     Mod+Ctrl+Right { move-column-right; }
     Mod+Ctrl+Up { move-window-up; }
