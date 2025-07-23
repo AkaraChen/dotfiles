@@ -1,10 +1,10 @@
-mod "Mod4"
-
-autostart {
-    command "waybar"
-    command "ghostty"
-    command "swaybg -i /home/akrc/.config/assets/bochi-1.jpg"
+input {
+    mod-key "Super"
 }
+
+spawn-at-startup "waybar"
+spawn-at-startup "ghostty"
+spawn-at-startup "swaybg -i /home/akrc/.config/assets/bochi-1.jpg"
 
 window-rule {
     geometry-corner-radius 10
@@ -32,10 +32,10 @@ binds {
     Mod+R { enter-resize-mode; }
     Mod+Left { focus-column-left; }
     Mod+Right { focus-column-right; }
-    Mod+Up { focus-window-up; }
-    Mod+Down { focus-window-down; }
-    Mod+Shift+Left { move-window-to-column-left; }
-    Mod+Shift+Right { move-window-to-column-right; }
-    Mod+Shift+Up { move-window-in-column-up; }
-    Mod+Shift+Down { move-window-in-column-down; }
+    Mod+Up { focus-window-up-in-column; }
+    Mod+Down { focus-window-down-in-column; }
+    Mod+Shift+Left { move-column-left; }
+    Mod+Shift+Right { move-column-right; }
+    Mod+Shift+Up { move-window-up-in-column; }
+    Mod+Shift+Down { move-window-down-in-column; }
 }
