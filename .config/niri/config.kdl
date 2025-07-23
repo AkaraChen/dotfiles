@@ -1,9 +1,5 @@
 mod "Mod4"
 
-preferences {
-    border-radius 10
-}
-
 autostart {
     command "waybar"
     command "ghostty"
@@ -11,51 +7,31 @@ autostart {
 }
 
 window-rule {
-    app-id "ulauncher"
-    float true
+    geometry-corner-radius 10
+    opacity 0.75
 }
 
-key-binding "Mod4-F" {
-    spawn "brave"
-}
-key-binding "Mod4-Return" {
-    spawn "ghostty"
-}
-key-binding "Mod4-D" {
-    spawn "ulauncher"
-}
-key-binding "Mod4-Q" {
-    close-window
+window-rule {
+    match app-id="ulauncher"
+    open-floating true
+    border { off }
+    shadow { off }
+    geometry-corner-radius 0
+    opacity 1.0
 }
 
-key-binding "Mod4-Left" {
-    focus-column "left"
-}
-key-binding "Mod4-Right" {
-    focus-column "right"
-}
-
-key-binding "Mod4-Up" {
-    focus-window "up"
-}
-key-binding "Mod4-Down" {
-    focus-window "down"
-}
-
-key-binding "Mod4-Shift-Left" {
-    move-window-to-column "left"
-}
-key-binding "Mod4-Shift-Right" {
-    move-window-to-column "right"
-}
-
-key-binding "Mod4-Shift-Up" {
-    move-window-in-column "up"
-}
-key-binding "Mod4-Shift-Down" {
-    move-window-in-column "down"
-}
-
-key-binding "Mod4-R" {
-    enter-resize-mode
+binds {
+    Mod+F { spawn "brave"; }
+    Mod+Return { spawn "ghostty"; }
+    Mod+D { spawn "ulauncher"; }
+    Mod+Q { close-window; }
+    Mod+R { enter-resize-mode; }
+    Mod+Left { focus-column-left; }
+    Mod+Right { focus-column-right; }
+    Mod+Up { focus-window-up; }
+    Mod+Down { focus-window-down; }
+    Mod+Shift+Left { move-window-to-column-left; }
+    Mod+Shift+Right { move-window-to-column-right; }
+    Mod+Shift+Up { move-window-in-column-up; }
+    Mod+Shift+Down { move-window-in-column-down; }
 }
