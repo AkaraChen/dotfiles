@@ -47,9 +47,9 @@ binds {
     Mod+D { spawn "ulauncher"; }
     Mod+Q { close-window; }
     Mod+Right { switch-preset-column-width; }
-    Mod+Left { switch-preset-column-width direction="previous"; }
+    Mod+Left { switch-preset-column-width; }
     Mod+Up { switch-preset-window-height; }
-    Mod+Down { switch-preset-window-height direction="previous"; }
+    Mod+Down { switch-preset-window-height; }
     Mod+Shift+Left { focus-column-left; }
     Mod+Shift+Right { focus-column-right; }
     Mod+Shift+Up { focus-window-up; }
