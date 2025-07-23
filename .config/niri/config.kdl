@@ -1,0 +1,35 @@
+mod "Mod4"
+
+preferences {
+    border-radius 10
+}
+
+autostart {
+    command "waybar"
+    command "ghostty"
+    command "swaybg -i ../assets/bochi-1.jpg"
+}
+
+window-rule {
+    app-id "ulauncher"
+    float true
+}
+
+key-binding "Mod4-F" { spawn "brave" }
+key-binding "Mod4-Return" { spawn "ghostty" }
+key-binding "Mod4-D" { spawn "ulauncher" }
+key-binding "Mod4-Q" { close-window }
+
+key-binding "Mod4-Left" { focus-column "left" }
+key-binding "Mod4-Right" { focus-column "right" }
+
+key-binding "Mod4-Up" { focus-window "up" }
+key-binding "Mod4-Down" { focus-window "down" }
+
+key-binding "Mod4-Shift-Left" { move-window-to-column "left" }
+key-binding "Mod4-Shift-Right" { move-window-to-column "right" }
+
+key-binding "Mod4-Shift-Up" { move-window-in-column "up" }
+key-binding "Mod4-Shift-Down" { move-window-in-column "down" }
+
+key-binding "Mod4-R" { enter-resize-mode }
