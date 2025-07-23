@@ -14,10 +14,14 @@ window-rule {
 window-rule {
     match app-id="ulauncher"
     open-floating true
-    border { off }
-    shadow { off }
     geometry-corner-radius 0
     opacity 1.0
+    border {
+        off
+    }
+    shadow {
+        off
+    }
 }
 
 binds {
