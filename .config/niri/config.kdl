@@ -60,6 +60,6 @@ binds {
     Mod+Ctrl+Down { move-window-down; }
 }
 
-output "Vitual-1" {
+output "Virtual-1" {
     scale 2
 }
