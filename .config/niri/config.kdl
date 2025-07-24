@@ -13,7 +13,7 @@ layout {
 
 window-rule {
     geometry-corner-radius 10
-    opacity 0.8
+    opacity 0.9
     border {
         off
     }
