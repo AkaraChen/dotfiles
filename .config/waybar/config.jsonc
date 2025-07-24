@@ -20,7 +20,7 @@
     "custom/power",
   ],
   "custom/spotify": {
-    "format": "  {}",
+    "format": " {}",
     "return-type": "json",
     "on-click": "playerctl -p spotify play-pause",
     "on-click-right": "spotifatius toggle-liked",
