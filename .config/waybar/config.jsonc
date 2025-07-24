@@ -33,6 +33,26 @@
     "show-passive-items": true,
     "spacing": 10,
   },
+  "custom/spotify": {
+    "format": " {}",
+    "return-type": "json",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-click-right": "spotifatius toggle-liked",
+    "on-click-middle": "playerctl -p spotify next",
+    "exec": "spotifatius monitor",
+  },
+  "mpris": {
+    "player": "spotify",
+    "dynamic-order": ["artist", "title"],
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "status-icons": {
+      "paused": "",
+    },
+    "player-icons": {
+      "default": "",
+    },
+  },
   "clock#simpleclock": {
     "tooltip": false,
     "format": "  {:%H:%M}",
