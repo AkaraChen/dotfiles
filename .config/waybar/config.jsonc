@@ -58,7 +58,7 @@
     "format": " {:%H:%M}",
   },
   "clock": {
-    "format": " {:L%a %d %b}",
+    "format": " {:%L%a %d %b}",
     "calendar": {
       "format": {
         "days": "<span weight='normal'>{}</span>",
@@ -83,7 +83,7 @@
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
-    "format-muted": "  muted",
+    "format-muted": " muted",
     "format-icons": {
       "headphone": "",
       "default": [" ", " ", " "],
