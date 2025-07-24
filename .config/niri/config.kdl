@@ -25,6 +25,7 @@ layout {
 
 window-rule {
     geometry-corner-radius 10
+    opacity 0.8
     border {
         off
     }
