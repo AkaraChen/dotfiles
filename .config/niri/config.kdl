@@ -59,3 +59,7 @@ binds {
     Mod+Ctrl+Up { move-window-up; }
     Mod+Ctrl+Down { move-window-down; }
 }
+
+outputs "Vitual-1" {
+    scale 2
+}
