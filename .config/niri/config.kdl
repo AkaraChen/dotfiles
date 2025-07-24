@@ -4,7 +4,6 @@ input {
 
 spawn-at-startup "waybar"
 spawn-at-startup "ghostty"
-spawn-at-startup "swaybg -i /home/akrc/.config/assets/bochi-1.jpg"
 
 layout {
     focus-ring {
