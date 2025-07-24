@@ -9,20 +9,6 @@ layout {
     focus-ring {
         off
     }
-    preset-column-widths {
-        proportion 0.33333
-        proportion 0.5
-        proportion 0.66667
-        proportion 0.75
-        proportion 1.0
-    }
-    preset-window-heights {
-        proportion 0.33333
-        proportion 0.5
-        proportion 0.66667
-        proportion 0.75
-        proportion 1.0
-    }
 }
 
 window-rule {
@@ -51,10 +37,10 @@ binds {
     Mod+Return { spawn "ghostty"; }
     Mod+D { spawn "ulauncher"; }
     Mod+Q { close-window; }
-    Mod+Right { switch-preset-column-width; }
-    Mod+Left { switch-preset-column-width; }
-    Mod+Up { switch-preset-window-height; }
-    Mod+Down { switch-preset-window-height; }
+    Mod+Right { set-column-width "+20%"; }
+    Mod+Left { set-column-width "-20%"; }
+    Mod+Up { set-window-height "+10%"; }
+    Mod+Down { set-window-height "-10%"; }
     Mod+Shift+Left { focus-column-left; }
     Mod+Shift+Right { focus-column-right; }
     Mod+Shift+Up { focus-window-up; }
